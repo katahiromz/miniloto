@@ -1,0 +1,23 @@
+#include <windows.h>
+#include <dlgs.h>
+
+1 24 "miniloto.exe.manifest"
+
+1 ICON "ml.ico"
+1 BITMAP "miniloto.bmp"
+
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+
+1 DIALOG 0, 0, 105, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniLOTOêîéöëIÇ—"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+{
+    CONTROL         "", stc1, "STATIC", SS_BITMAP, 5, 5, 59, 40
+    EDITTEXT        edt1, 5, 50, 15, 14, NOT WS_TABSTOP | ES_CENTER
+    EDITTEXT        edt2, 25, 50, 15, 14, NOT WS_TABSTOP | ES_CENTER
+    EDITTEXT        edt3, 45, 50, 15, 14, NOT WS_TABSTOP | ES_CENTER
+    EDITTEXT        edt4, 65, 50, 15, 14, NOT WS_TABSTOP | ES_CENTER
+    EDITTEXT        edt5, 85, 50, 15, 14, NOT WS_TABSTOP | ES_CENTER
+    DEFPUSHBUTTON   "êîéöÇïœÇ¶ÇÈ", psh1, 45, 70, 55, 14
+}
